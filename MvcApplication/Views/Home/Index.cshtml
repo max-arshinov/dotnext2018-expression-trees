@@ -1,0 +1,7 @@
+﻿@model UserViewModel
+
+
+@Html.EditorFor(x => x.FirstName /* Expression<Func<UserViewModel, string>> */, null, null, null)
+@{
+    Html.EditorFor<string>(x => x.FirstName, null, null, null);
+}
